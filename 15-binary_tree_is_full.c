@@ -17,8 +17,10 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	int leaves = 0;
 	int full_num = 0;
 
-	if (tree == NULL || (tree->right == NULL && tree->left == NULL))
+	if (tree == NULL)
 		return (0);
+	if (tree->left == NULL && tree->right == NULL)
+		return (1);
 	right_height = binary_tree_height(tree->right);
 	left_height = binary_tree_height(tree->left);
 	leaves = binary_tree_leaves(tree);
