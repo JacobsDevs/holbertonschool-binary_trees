@@ -3,14 +3,13 @@
 #include <stdio.h>
 
 /**
- * binary_tree_is_full - Checks to see if a tree is full and each node
- * has 2 leaves or is a leaf.
+ * binary_tree_is_perfect - Checks to see if a tree is perfect.
  * @tree: Pointer to the beginning of the binary tree.
  *
- * Return: 1 if the tree is full or 0 if tree is NULL or not full.
+ * Return: 1 if the tree is perfect or 0 if tree is NULL or not perfect.
  */
 
-int binary_tree_is_full(const binary_tree_t *tree)
+int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int left_height = 0;
 	int right_height = 0;
